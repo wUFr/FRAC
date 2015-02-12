@@ -1,0 +1,1 @@
+logos, banners and other design-related images
