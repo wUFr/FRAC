@@ -2,3 +2,49 @@
 
 
 
+
+
+
+
+
+
+
+/*
+
+	HEADER
+	
+*/
+#admin_header {
+	height: 100px;
+}
+
+
+/*
+
+	MAIN - WAPPER OF SIDEBAR AND CONTENT
+	
+*/
+#admin_main {
+	overflow: hidden;
+}
+
+/*
+
+	SIDEBAR
+	
+*/
+#admin_sidebar {
+	float: left;
+	width: 280px;
+}
+
+/*
+
+	CONTENT
+	
+*/
+#admin_content {
+	overflow: hidden;
+}
+
+
