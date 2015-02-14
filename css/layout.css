@@ -21,7 +21,7 @@ body {
 
 	#admin_header .title {
 		position: absolute;
-		top: 30px;
+		top: 5px;
 		left: 30px;
 		font-size: 40px;
 		color: white;
@@ -171,12 +171,6 @@ obsolete?
 				#admin_sidebar > ul > li > a.settings > span.icon:before {
 					content: "\f013";
 				}
-			
-
-
-
-
-
 
 /*
 
@@ -185,6 +179,7 @@ obsolete?
 */
 #admin_content {
 	overflow: hidden;
+	min-height: 300px;
 }
 
 /*
@@ -193,21 +188,115 @@ obsolete?
 
 */
 #admin_userbar {
+	position: relative;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	background: #393f42;
-	padding: 30px;
-	color: #eaf3f5;
+	background: #f8f8f8;
+	padding: 20px;
+	color: #525b60;
 }
 
+#admin_userbar:after {
+	display: block;
+	width: 100%;
+	clear: both;
+	content: "";
+}
+
+	#admin_userbar .avatar {
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		overflow: hidden;
+		float: left;
+	}
+
+		#admin_userbar .avatar img {
+			width: 50px;
+			height: 50px;
+		}
+
+	#admin_userbar .name {
+		position: relative;
+		float: left;
+		padding: 0 20px 0 30px;
+		line-height: 50px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	#admin_userbar .name:before {
+		position:absolute;
+		top:16px;
+		left:10px;
+		display:inline-block;
+		font-family: FontAwesome;
+		content: "\f0d7";
+		-webkit-transition:500ms;
+		-moz-transition:500ms;
+		-ms-transition:500ms;
+		transition:500ms;
+		width:15px;
+		height:15px;
+		line-height:15px;
+		text-align:center;
+	}
+	
+	#admin_userbar .name.active:before {
+		-webkit-transform:rotate(180deg);
+		-moz-transform:rotate(180deg);
+		-ms-transform:rotate(180deg);
+		transform:rotate(180deg);
+	}
+	
+	
+	
+	#admin_userbar .user_menu {
+		position:absolute;
+		top:60px;
+		left:80px;
+		padding:7px;
+		background:white;
+		border-radius:5px;
+		list-style:none;
+		width:120px;
+		box-shadow:0 0 7px rgba(0,0,0,0.1);
+		display:none;
+	}
+	
+	#admin_userbar .user_menu.open {
+		display:block;
+	}
+	
+		#admin_userbar .user_menu > li {}
+		
+			#admin_userbar .user_menu > li > a {
+				display:block;
+				padding:6px;
+				text-decoration:none;
+				color: #6F6F6F;
+			}
+			
+			#admin_userbar .user_menu > li > a:hover {
+				color: #46a3ea;
+			}
 
 
 
 
 
-
-
+	/* MAIN CONTENT FOR ACTUAL PAGE */
+	#admin_content > .inside {
+		padding:30px;
+	}
+	
+	#admin_content > .inside:after {
+		display: block;
+		width: 100%;
+		clear: both;
+		content: "";
+	}
 
 
 

@@ -3,12 +3,20 @@
 <head>
 	<meta charset="UTF-8" />
 	
-	<link href="css/fonts.css" rel="stylesheet" type="text/css" />
-	<link href="css/reset.css" rel="stylesheet" type="text/css" />
-	<link href="css/ui.css" rel="stylesheet" type="text/css" />
-	<link href="css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="css/reset.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/fonts.css" rel="stylesheet" />
+	<link href="css/ui.css" rel="stylesheet" />
+	<link href="css/layout.css" rel="stylesheet" />
 	
 	<script src="js/jquery/jquery-2.1.3.min.js"></script>
+	
+	
+	
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 	
 	
@@ -48,13 +56,75 @@
 		</aside>
 		<section id="admin_content">
 			<section id="admin_userbar">
-				test
-			</section>	
+				<div class="avatar"><img src="img/_testdata/avatar.jpg" /></div>
+				<div id="toggle_user_menu" class="name" onclick="$('div.user_menu').toggleClass('open');">Jiří Bělský</div>
+				<ul id="header_user_menu" class="user_menu">
+					<li><a href="#">Overview</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#">Tasks</a></li>
+				</ul>
+			</section>
+			<section class="inside">
+				<h1 class="ui_title">Hello world!</h1>
+				<h2 class="ui_title">Hello world!</h2>
+				<h3 class="ui_title">Hello world!</h3>
+				<h4 class="ui_title">Hello world!</h4>
+				
+				<div class="row">
+					<!-- BOOTSTRAP TEST -->
+					<div class="col-md-8 col-sm-12 col-xs-5">
+						<div class="ui_text info">
+							<div class="title">Informations</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum egestas orci, quis sagittis justo pharetra maximus. 
+							Phasellus felis dui, fringilla sed semper at, tempus vel elit. Fusce tellus metus, suscipit quis ex quis, tincidunt consequat risus. 
+							Etiam in efficitur elit. Aenean malesuada sollicitudin neque vitae auctor. Nam ac tellus semper, pellentesque elit et, congue felis. 
+							Sed maximus erat odio, vel bibendum lectus ornare id. Sed imperdiet risus nisl, nec tristique enim laoreet vitae. 
+							Nulla ac ultrices ipsum, vel fringilla elit. In mattis lectus nec ante vestibulum, quis finibus leo mattis. 
+							Proin mollis pharetra risus, ac ultricies est mattis porttitor. Morbi ut tortor nec orci convallis varius.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ui_text warning">
+					<div class="title">Warning</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum egestas orci, quis sagittis justo pharetra maximus. 
+					Phasellus felis dui, fringilla sed semper at, tempus vel elit. Fusce tellus metus, suscipit quis ex quis, tincidunt consequat risus. 
+					Etiam in efficitur elit. Aenean malesuada sollicitudin neque vitae auctor. Nam ac tellus semper, pellentesque elit et, congue felis. 
+					Sed maximus erat odio, vel bibendum lectus ornare id. Sed imperdiet risus nisl, nec tristique enim laoreet vitae. 
+					Nulla ac ultrices ipsum, vel fringilla elit. In mattis lectus nec ante vestibulum, quis finibus leo mattis. 
+					Proin mollis pharetra risus, ac ultricies est mattis porttitor. Morbi ut tortor nec orci convallis varius.</p>
+				</div>
+				
+				<div class="ui_text error">
+					<div class="title">Error</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum egestas orci, quis sagittis justo pharetra maximus. 
+					Phasellus felis dui, fringilla sed semper at, tempus vel elit. Fusce tellus metus, suscipit quis ex quis, tincidunt consequat risus. 
+					Etiam in efficitur elit. Aenean malesuada sollicitudin neque vitae auctor. Nam ac tellus semper, pellentesque elit et, congue felis. 
+					Sed maximus erat odio, vel bibendum lectus ornare id. Sed imperdiet risus nisl, nec tristique enim laoreet vitae. 
+					Nulla ac ultrices ipsum, vel fringilla elit. In mattis lectus nec ante vestibulum, quis finibus leo mattis. 
+					Proin mollis pharetra risus, ac ultricies est mattis porttitor. Morbi ut tortor nec orci convallis varius.</p>
+				</div>
+				<div class="ui_text confirm">
+					<div class="title">Confirm</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum egestas orci, quis sagittis justo pharetra maximus. 
+					Phasellus felis dui, fringilla sed semper at, tempus vel elit. Fusce tellus metus, suscipit quis ex quis, tincidunt consequat risus. 
+					Etiam in efficitur elit. Aenean malesuada sollicitudin neque vitae auctor. Nam ac tellus semper, pellentesque elit et, congue felis. 
+					Sed maximus erat odio, vel bibendum lectus ornare id. Sed imperdiet risus nisl, nec tristique enim laoreet vitae. 
+					Nulla ac ultrices ipsum, vel fringilla elit. In mattis lectus nec ante vestibulum, quis finibus leo mattis. 
+					Proin mollis pharetra risus, ac ultricies est mattis porttitor. Morbi ut tortor nec orci convallis varius.</p> 
+				</div>
+			
+			</section>
 		</section>
 	</section>
 	
 	<script type="text/javascript">
 	<!--
+	
+		$( "#toggle_user_menu" ).click(function() {
+			$("#header_user_menu").toggleClass( "open" );
+			$("#toggle_user_menu").toggleClass( "active" );
+		});
 	
 		$(document).ready(function(){
 			resizeDiv();
