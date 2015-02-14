@@ -29,6 +29,11 @@
 
 	<section id="admin_header">
 		<h1 class="title">FRAC<small>Free Responsive Admin Center</small></h1>
+		<div class="links">
+			<a href="https://github.com/wUFr/FRAC" target="_blank"><strong>Follow project on Github</strong></a>
+		</div>
+		
+		
 	</section>
 	<section id="admin_main">
 		<aside id="admin_sidebar">
@@ -115,6 +120,41 @@
 					Nulla ac ultrices ipsum, vel fringilla elit. In mattis lectus nec ante vestibulum, quis finibus leo mattis. 
 					Proin mollis pharetra risus, ac ultricies est mattis porttitor. Morbi ut tortor nec orci convallis varius.</p> 
 				</div>
+				
+				<div class="row">
+					<div class="col-md-6">
+						<div class="ui_box">
+							<div class="header">
+								<div class="title">
+									UI BOX
+								</div>
+								<div class="actions">
+									<a class="close"></a>
+								</div>
+							
+							</div>
+							<div class="content">
+								content
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="ui_box">
+							<div class="header">
+								<div class="title">
+									UI BOX
+								</div>
+							
+							</div>
+							<div class="content">
+								content
+							</div>
+						</div>
+					</div>
+				
+				
+				
+				</div>
 			
 			</section>
 		</section>
@@ -124,10 +164,17 @@
 	<!--
 	
 		$( "#toggle_user_menu" ).click(function() {
-			$("#header_user_menu").toggleClass( "open" );
-			$("#toggle_user_menu").toggleClass( "active" );
+			$("#header_user_menu").toggleClass("open");
+			$("#toggle_user_menu").toggleClass("active");
 		});
 	
+		// UI BOX CLOSE-OPEN TOGGLE
+		$( ".ui_box .header .close" ).click(function() {
+			$(this).parent().parent().parent(".ui_box").toggleClass('closed');
+			$(this).toggleClass('active')
+		});
+	
+		// MAIN CONTENT WINDOWS RESIZE
 		$(document).ready(function(){
 			resizeDiv();
 		});

@@ -16,7 +16,6 @@ body {
 	position: relative;
 	height: 100px;
 	background: white;
-	border-bottom: 1px solid #F4F4F4;
 	color: #323536;
 }
 
@@ -35,6 +34,21 @@ body {
 			color: #0091ff;
 		}
 
+	/* GITHUB LINKS */
+	#admin_header .links {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+
+		#admin_header .links a {
+			text-decoration: none;
+		}
+
+		#admin_header .links a:hover {
+			color: #46a3ea;
+		}
+	
 /*
 
 	MAIN - WAPPER OF SIDEBAR AND CONTENT
@@ -72,6 +86,7 @@ body {
 	transition: 1s;
 	overflow: hidden;
 	border-right: 1px solid #e7ecf0;
+/*	border-top: 1px solid #e7ecf0;*/
 }
 
 @media (max-width:1300px){
@@ -192,7 +207,18 @@ body {
 	background: #f8f8f8;
 	padding: 20px;
 	color: #525b60;
+	border-top: 1px solid #F4F4F4;
 	border-bottom: 1px solid #F4F4F4;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+@media (max-width:1300px){
+	#admin_userbar {
+		padding: 10px 20px;
+	}
 }
 
 #admin_userbar:after {
@@ -269,6 +295,16 @@ body {
 		width: 120px;
 		box-shadow: 0 0 7px rgba(0,0,0,0.1);
 		display: none;
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		-ms-transition: 1s;
+		transition: 1s;
+	}
+
+	@media (max-width:1300px){
+		#admin_userbar .user_menu {
+			top: 50px;
+		}
 	}
 
 	#admin_userbar .user_menu.open {
