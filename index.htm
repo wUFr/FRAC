@@ -34,30 +34,32 @@
 		<aside id="admin_sidebar">
 			<ul>
 				<li>
-					<a href="#" class="settings">Lorem ipsum<span class="icon"></span></a>
+					<a href="#" class="settings">Settings<span class="icon"></span></a>
 				</li>
 				<li>
-					<a href="#" class="users">Lorem ipsum<span class="icon"></span></a>
+					<a href="#" class="users">Users<span class="icon"></span></a>
 				</li>
 				<li>
-					<a href="#" class="list">Lorem ipsum<span class="icon"></span></a>
+					<a href="#" class="list">Lists<span class="icon"></span></a>
 				</li>
 				<li>
-					<a href="#">Lorem ipsum</a>
+					<a href="#" class="articles">Articles<span class="icon"></span></a>
 				</li>
 				<li>
-					<a href="#">Lorem ipsum</a>
+					<a href="#" class="stats">Statistics<span class="icon"></span></a>
 				</li>
-			
+				<li>
+					<a href="#" class="files">Files<span class="icon"></span></a>
+				</li>
 			</ul>
-		
-		
-		
 		</aside>
 		<section id="admin_content">
 			<section id="admin_userbar">
 				<div class="avatar"><img src="img/_testdata/avatar.jpg" /></div>
-				<div id="toggle_user_menu" class="name" onclick="$('div.user_menu').toggleClass('open');">Jiří Bělský</div>
+				<div class="inside">
+					<span id="toggle_user_menu">Jiří Bělský</span>
+					<a class="logout" href="#" class="logout">Logout</a>
+				</div>
 				<ul id="header_user_menu" class="user_menu">
 					<li><a href="#">Overview</a></li>
 					<li><a href="#">Settings</a></li>
@@ -72,7 +74,7 @@
 				
 				<div class="row">
 					<!-- BOOTSTRAP TEST -->
-					<div class="col-md-8 col-sm-12 col-xs-5">
+					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="ui_text info">
 							<div class="title">Informations</div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum egestas orci, quis sagittis justo pharetra maximus. 

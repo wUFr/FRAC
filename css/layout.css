@@ -15,16 +15,17 @@ body {
 #admin_header {
 	position: relative;
 	height: 100px;
-	background: #323536;
-	color: #eaf3f5;
+	background: white;
+	border-bottom: 1px solid #F4F4F4;
+	color: #323536;
 }
 
 	#admin_header .title {
 		position: absolute;
-		top: 5px;
+		top: 30px;
 		left: 30px;
 		font-size: 40px;
-		color: white;
+		color: #323536;
 		line-height: 25px;
 	}
 
@@ -34,7 +35,6 @@ body {
 			color: #0091ff;
 		}
 
-
 /*
 
 	MAIN - WAPPER OF SIDEBAR AND CONTENT
@@ -42,31 +42,8 @@ body {
 */
 #admin_main {
 	position: relative;
+	overflow: hidden;
 }
-/*
-
-obsolete?
-
-#admin_main:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	background: #373b40;
-	width: 280px;
-	content: "";
-	z-index: 1;
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	transition: 1s;
-}
-
-@media (max-width:1300px){
-	#admin_main:before {
-		width:60px;
-	}
-}*/
 
 #admin_main:after {
 	display: block;
@@ -81,34 +58,33 @@ obsolete?
 	
 */
 #admin_sidebar {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 	padding: 15px;
 	position: relative;
 	z-index: 2;
-	background: #373b40;
+	background: #f3f6f8;
 	float: left;
 	width: 280px;
 	min-height: 100%;
-	color: #eaf3f5;
+	color: #505960;
 	-webkit-transition: 1s;
 	-moz-transition: 1s;
 	-ms-transition: 1s;
 	transition: 1s;
 	overflow: hidden;
+	border-right: 1px solid #e7ecf0;
 }
 
 @media (max-width:1300px){
 	#admin_sidebar {
-		width:60px;
+		width: 60px;
 	}
+
 	#admin_sidebar:hover {
-		width:280px;
-		margin-right:-220px;
+		width: 280px;
+		margin-right: -220px;
+		box-shadow: 0 0 40px rgba(0,0,50,0.1);
 	}
 }
-
 
 	#admin_sidebar > ul {
 		list-style: none;
@@ -118,17 +94,17 @@ obsolete?
 		-ms-transition: 1s;
 		transition: 1s;
 	}
-	
+
 	@media (max-width:1300px){
 		#admin_sidebar > ul {
-			margin-left:-210px;
-			
+			margin-left: -210px;	
 		}
+
 		#admin_sidebar:hover > ul {
-			margin-left:0;
+			margin-left: 0;
 		}
 	}
-		
+
 		#admin_sidebar > ul > li {
 			display: block;
 			position: relative;
@@ -142,7 +118,8 @@ obsolete?
 			}
 
 			#admin_sidebar > ul > li > a:hover {
-				background: #2f3337;
+				background: #e3eaef;
+				color: #475159;
 			}
 
 				/* ICON */
@@ -155,22 +132,45 @@ obsolete?
 					height: 30px;
 					line-height: 30px;
 					text-align: center;
-					background: #2f3337;
+					background: #e3eaef;
 					content: "";
 				}
+
 				#admin_sidebar > ul > li > a > span.icon:before {
 					font-family: FontAwesome;
-					font-size: 18px;
-					color: #c9c9c9;
+					font-size: 16px;
+					color: #717f89;
 				}
-				
+
 				#admin_sidebar > ul > li > a:hover > span.icon:before {
-					color: white;
+					color: #475159;
 				}
-				
+
 				#admin_sidebar > ul > li > a.settings > span.icon:before {
 					content: "\f013";
 				}
+
+				#admin_sidebar > ul > li > a.users > span.icon:before {
+					content: "\f007";
+				}
+
+				#admin_sidebar > ul > li > a.list > span.icon:before {
+					content: "\f0ca";
+				}
+
+				#admin_sidebar > ul > li > a.articles > span.icon:before {
+					content: "\f15c";
+				}
+
+				#admin_sidebar > ul > li > a.stats > span.icon:before {
+					content: "\f1fe";
+				}
+				
+				#admin_sidebar > ul > li > a.files > span.icon:before {
+					content: "\f15b";
+				}
+				
+				
 
 /*
 
@@ -189,12 +189,10 @@ obsolete?
 */
 #admin_userbar {
 	position: relative;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 	background: #f8f8f8;
 	padding: 20px;
 	color: #525b60;
+	border-bottom: 1px solid #F4F4F4;
 }
 
 #admin_userbar:after {
@@ -217,80 +215,86 @@ obsolete?
 			height: 50px;
 		}
 
-	#admin_userbar .name {
+	#admin_userbar .inside {
 		position: relative;
 		float: left;
 		padding: 0 20px 0 30px;
 		line-height: 50px;
-		font-size: 16px;
+		font-size: 14px;
 		cursor: pointer;
 	}
 
-	#admin_userbar .name:before {
-		position:absolute;
-		top:16px;
-		left:10px;
-		display:inline-block;
-		font-family: FontAwesome;
-		content: "\f0d7";
-		-webkit-transition:500ms;
-		-moz-transition:500ms;
-		-ms-transition:500ms;
-		transition:500ms;
-		width:15px;
-		height:15px;
-		line-height:15px;
-		text-align:center;
-	}
+		#admin_userbar .inside > span:before {
+			position: absolute;
+			top: 16px;
+			left: 10px;
+			display: inline-block;
+			font-family: FontAwesome;
+			content: "\f0d7";
+			-webkit-transition: 500ms;
+			-moz-transition: 500ms;
+			-ms-transition: 500ms;
+			transition: 500ms;
+			width: 15px;
+			height: 15px;
+			line-height: 15px;
+			text-align: center;
+		}
 	
-	#admin_userbar .name.active:before {
-		-webkit-transform:rotate(180deg);
-		-moz-transform:rotate(180deg);
-		-ms-transform:rotate(180deg);
-		transform:rotate(180deg);
-	}
-	
-	
-	
-	#admin_userbar .user_menu {
-		position:absolute;
-		top:60px;
-		left:80px;
-		padding:7px;
-		background:white;
-		border-radius:5px;
-		list-style:none;
-		width:120px;
-		box-shadow:0 0 7px rgba(0,0,0,0.1);
-		display:none;
-	}
-	
-	#admin_userbar .user_menu.open {
-		display:block;
-	}
-	
-		#admin_userbar .user_menu > li {}
+		#admin_userbar .inside > span.active:before {
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
 		
+		#admin_userbar .inside a.logout {
+			margin-left: 20px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		
+		#admin_userbar .inside a.logout:hover {
+			color: #232323;
+		}
+
+	#admin_userbar .user_menu {
+		position: absolute;
+		top: 60px;
+		left: 80px;
+		padding: 7px;
+		background: white;
+		border-radius: 5px;
+		list-style: none;
+		width: 120px;
+		box-shadow: 0 0 7px rgba(0,0,0,0.1);
+		display: none;
+	}
+
+	#admin_userbar .user_menu.open {
+		display: block;
+	}
+
+		#admin_userbar .user_menu > li {}
+
 			#admin_userbar .user_menu > li > a {
-				display:block;
-				padding:6px;
-				text-decoration:none;
+				display: block;
+				padding: 6px;
+				text-decoration: none;
 				color: #6F6F6F;
 			}
-			
+
 			#admin_userbar .user_menu > li > a:hover {
 				color: #46a3ea;
 			}
 
 
 
-
-
 	/* MAIN CONTENT FOR ACTUAL PAGE */
 	#admin_content > .inside {
-		padding:30px;
+		padding: 30px;
 	}
-	
+
 	#admin_content > .inside:after {
 		display: block;
 		width: 100%;
