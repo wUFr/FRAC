@@ -1,13 +1,11 @@
 /* CSS BY JIŘÍ BĚLSKÝ - FRAC PROJECT */ 
 
 
-
-
-
-
-
-
-
+body {
+	font-family: 'Open Sand', arial, sans-serif;
+	font-size: 14px;
+	color: #525b60;
+}
 
 /*
 
@@ -15,8 +13,26 @@
 	
 */
 #admin_header {
+	position: relative;
 	height: 100px;
+	background: #323536;
+	color: #eaf3f5;
 }
+
+	#admin_header .title {
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		font-size: 40px;
+		color: white;
+		line-height: 25px;
+	}
+
+		#admin_header .title small {
+			display: block;
+			font-size: 11px;
+			color: #0091ff;
+		}
 
 
 /*
@@ -25,7 +41,38 @@
 	
 */
 #admin_main {
-	overflow: hidden;
+	position: relative;
+}
+/*
+
+obsolete?
+
+#admin_main:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: #373b40;
+	width: 280px;
+	content: "";
+	z-index: 1;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+}
+
+@media (max-width:1300px){
+	#admin_main:before {
+		width:60px;
+	}
+}*/
+
+#admin_main:after {
+	display: block;
+	width: 100%;
+	clear: both;
+	content: "";
 }
 
 /*
@@ -34,9 +81,102 @@
 	
 */
 #admin_sidebar {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 15px;
+	position: relative;
+	z-index: 2;
+	background: #373b40;
 	float: left;
 	width: 280px;
+	min-height: 100%;
+	color: #eaf3f5;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
+	overflow: hidden;
 }
+
+@media (max-width:1300px){
+	#admin_sidebar {
+		width:60px;
+	}
+	#admin_sidebar:hover {
+		width:280px;
+		margin-right:-220px;
+	}
+}
+
+
+	#admin_sidebar > ul {
+		list-style: none;
+		width:250px;
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		-ms-transition: 1s;
+		transition: 1s;
+	}
+	
+	@media (max-width:1300px){
+		#admin_sidebar > ul {
+			margin-left:-210px;
+			
+		}
+		#admin_sidebar:hover > ul {
+			margin-left:0;
+		}
+	}
+		
+		#admin_sidebar > ul > li {
+			display: block;
+			position: relative;
+		}
+
+			#admin_sidebar > ul > li > a {
+				position: relative;
+				display: block;
+				padding: 15px 40px 15px 15px;
+				text-decoration: none;
+			}
+
+			#admin_sidebar > ul > li > a:hover {
+				background: #2f3337;
+			}
+
+				/* ICON */
+				#admin_sidebar > ul > li > a > span.icon {
+					position: absolute;
+					top: 7px;
+					right: 10px;
+					display: block;
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					text-align: center;
+					background: #2f3337;
+					content: "";
+				}
+				#admin_sidebar > ul > li > a > span.icon:before {
+					font-family: FontAwesome;
+					font-size: 18px;
+					color: #c9c9c9;
+				}
+				
+				#admin_sidebar > ul > li > a:hover > span.icon:before {
+					color: white;
+				}
+				
+				#admin_sidebar > ul > li > a.settings > span.icon:before {
+					content: "\f013";
+				}
+			
+
+
+
+
+
 
 /*
 
@@ -46,5 +186,38 @@
 #admin_content {
 	overflow: hidden;
 }
+
+/*
+
+	USER BAR
+
+*/
+#admin_userbar {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #393f42;
+	padding: 30px;
+	color: #eaf3f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,4 +1,20 @@
 /* CSS BY JIŘÍ BĚLSKÝ - FRAC PROJECT */ 
+* {
+	margin: 0;
+	padding: 0;
+}
 
+a {
+	color: inherit;
+}
+
+a:focus {
+	outline: none;
+	text-decoration-style: dotted;
+}
+
+a img {
+	border: 0;
+}
 
 
