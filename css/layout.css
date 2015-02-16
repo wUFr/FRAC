@@ -247,8 +247,11 @@ body {
 		padding: 0 20px 0 30px;
 		line-height: 50px;
 		font-size: 14px;
-		cursor: pointer;
 	}
+	
+		#admin_userbar .inside > span {
+			cursor: pointer;
+		}
 
 		#admin_userbar .inside > span:before {
 			position: absolute;

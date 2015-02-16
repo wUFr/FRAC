@@ -122,7 +122,7 @@
 				</div>
 				
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="ui_box">
 							<div class="header">
 								<div class="title">
@@ -138,7 +138,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-12">
 						<div class="ui_box">
 							<div class="header">
 								<div class="title">
@@ -151,9 +151,46 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			
+				<div class="row">
+					<div class="col-md-12">
+						<div class="ui_message info">
+							<a class="close"></a>
+							<div class="title">Informations</div>
+							<p>lorem ipsum dolor info box text</p>
+						</div>
+					</div>
+				</div>
 				
+				<div class="row">
+					<div class="col-md-12">
+						<div class="ui_message confirm">
+							<a class="close"></a>
+							<div class="title">Confirm</div>
+							<p>lorem ipsum dolor info box text</p>
+						</div>
+					</div>
+				</div>
 				
+				<div class="row">
+					<div class="col-md-12">
+						<div class="ui_message warning">
+							<a class="close"></a>
+							<div class="title">Warning</div>
+							<p>lorem ipsum dolor info box text</p>
+						</div>
+					</div>
+				</div>
 				
+				<div class="row">
+					<div class="col-md-12">
+						<div class="ui_message error">
+							<a class="close"></a>
+							<div class="title">Error</div>
+							<p>lorem ipsum dolor info box text</p>
+						</div>
+					</div>
 				</div>
 			
 			</section>
@@ -173,6 +210,12 @@
 			$(this).parent().parent().parent(".ui_box").toggleClass('closed');
 			$(this).toggleClass('active')
 		});
+		
+		// UI MESSAGE CLOSE-OPEN TOGGLE
+		$( ".ui_message .close" ).click(function() {
+			$(this).parent(".ui_message").addClass('closed');
+		});
+
 	
 		// MAIN CONTENT WINDOWS RESIZE
 		$(document).ready(function(){

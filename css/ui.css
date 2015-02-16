@@ -111,12 +111,12 @@ h4.ui_title {
 	position: relative;
 	background: #FBFBFB;
 	border: 1px solid #F3F3F3;
+	margin: 10px 0;
 }
 
 	.ui_box > .header {
 		padding: 10px;
 		background: #F3F3F3;
-		border-bottom: 1px solid #F3F3F3;
 	}
 
 	.ui_box > .header:after {
@@ -134,7 +134,7 @@ h4.ui_title {
 
 		.ui_box > .header .actions {
 			float: right;
-			margin: -2px;
+			margin: -3px;
 		}
 
 			.ui_box > .header .actions a {
@@ -179,12 +179,70 @@ h4.ui_title {
 
 
 
+/*
 
+	UI MESSAGE
+	
+*/
+.ui_message {
+	position: relative;
+	margin: 10px 0;
+	padding: 15px 15px 15px 20px;
+	color: white;
+}
+.ui_message.closed {
+	display: none;
+}
 
+.ui_message:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	content: "";
+	background: rgba(0,0,0,0.2);
+	width: 5px;
+}
 
+.ui_message.info {
+	background: #5EBAFF;
+}
 
+.ui_message.warning {
+	background: #FFB148;
+}
 
+.ui_message.error {
+	background: #FF4848;
+}
 
+.ui_message.confirm {
+	background: #75DF00;
+}
+
+	.ui_message > .title {
+		font-size: 14px;
+		font-weight: bold;
+		padding: 0 0 5px 0;
+	}
+
+	.ui_message > a.close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		cursor: pointer;
+	}
+
+	.ui_message > a.close:hover {
+		opacity: 0.8;
+	}
+
+	.ui_message > a.close:before {
+		font-family: FontAwesome;
+		font-size: 16px;
+		line-height: 16px;
+		content: "\f00d";
+	}
 
 
 
