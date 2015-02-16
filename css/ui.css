@@ -1,36 +1,34 @@
 /* CSS BY JIŘÍ BĚLSKÝ - FRAC PROJECT */ 
 
 
-
 /*
 
 	PAGE TITLES
 	
 */
 h1.ui_title {
-	font-size:42px;
-	font-weight:600;
-	color:#46a3ea;
+	font-size: 42px;
+	font-weight: 600;
+	color: #46a3ea;
 }
 
 h2.ui_title {
-	font-size:34px;
-	font-weight:600;
-	color:#46a3ea;
+	font-size: 34px;
+	font-weight: 600;
+	color: #46a3ea;
 }
 
 h3.ui_title {
-	font-size:26px;
-	font-weight:600;
-	color:#46a3ea;
+	font-size: 26px;
+	font-weight: 600;
+	color: #46a3ea;
 }
 
 h4.ui_title {
-	font-size:20px;
-	font-weight:600;
-	color:#46a3ea;
+	font-size: 20px;
+	font-weight: 600;
+	color: #46a3ea;
 }
-
 
 /*
 
@@ -38,47 +36,46 @@ h4.ui_title {
 	
 */
 .ui_text {
-	position:relative;
-	padding:20px 0 20px 100px;
-	
+	position: relative;
+	padding: 20px 0 20px 100px;
 }
 
 .ui_text:before {
-	position:absolute;
-	top:40px;
-	left:15px;
-	font-family:FontAwesome;
-	font-size:50px;
-	width:50px;
-	text-align:center;
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	font-family: FontAwesome;
+	font-size: 50px;
+	width: 50px;
+	text-align: center;
 }
 
 .ui_text.info:before {
-	content:"\f129";
+	content: "\f129";
 	color: #5EBAFF;
 }
 
 .ui_text.warning:before {
-	content:"\f12a";
+	content: "\f12a";
 	color: #FFB148;
 }
 
 .ui_text.error:before {
-	content:"\f00d";
+	content: "\f00d";
 	color: #FF4848;
 }
 
 .ui_text.confirm:before {
-	content:"\f00c";
+	content: "\f00c";
 	color: #75DF00;
 }
 
 	.ui_text > .title {
 		padding: 0 0 5px 0;
-		font-size:15px;
-		font-weight:600;
+		font-size: 15px;
+		font-weight: 600;
 	}
-	
+
 	.ui_text.info > .title {
 		color: #5EBAFF;
 	}
@@ -86,21 +83,20 @@ h4.ui_title {
 	.ui_text.warning > .title {
 		color: #FFB148;
 	}
-	
+
 	.ui_text.error > .title {
 		color: #FF4848;
 	}
-	
+
 	.ui_text.confirm > .title {
 		color: #75DF00;
 	}
-	
-	.ui_text > p {
-		font-size:14px;
-		color:#8c8c8c;
-		line-height:145%;
-	}
 
+	.ui_text > p {
+		font-size: 14px;
+		color: #8c8c8c;
+		line-height: 145%;
+	}
 
 /*
 
@@ -177,8 +173,6 @@ h4.ui_title {
 	}
 
 
-
-
 /*
 
 	UI MESSAGE
@@ -190,6 +184,7 @@ h4.ui_title {
 	padding: 15px 15px 15px 20px;
 	color: white;
 }
+
 .ui_message.closed {
 	display: none;
 }
@@ -243,12 +238,6 @@ h4.ui_title {
 		line-height: 16px;
 		content: "\f00d";
 	}
-
-
-
-
-
-
 
 
 

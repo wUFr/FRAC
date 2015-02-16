@@ -2,7 +2,7 @@
 
 
 body {
-	font-family: 'Open Sand', arial, sans-serif;
+	font-family: 'Open Sans', arial, sans-serif;
 	font-size: 14px;
 	color: #525b60;
 }
@@ -86,7 +86,6 @@ body {
 	transition: 1s;
 	overflow: hidden;
 	border-right: 1px solid #e7ecf0;
-/*	border-top: 1px solid #e7ecf0;*/
 }
 
 @media (max-width:1300px){
@@ -103,7 +102,7 @@ body {
 
 	#admin_sidebar > ul {
 		list-style: none;
-		width:250px;
+		width: 250px;
 		-webkit-transition: 1s;
 		-moz-transition: 1s;
 		-ms-transition: 1s;
@@ -184,8 +183,6 @@ body {
 				#admin_sidebar > ul > li > a.files > span.icon:before {
 					content: "\f15b";
 				}
-				
-				
 
 /*
 
