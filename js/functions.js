@@ -3,6 +3,11 @@ $( "#toggle_user_menu" ).click(function() {
 	$("#toggle_user_menu").toggleClass("active");
 });
 
+// FOR MOBILE - HOTDOG
+$( "#main_menu_hotdog" ).click(function() {
+	$("#admin_sidebar").toggleClass("opened");
+});
+
 // UI BOX CLOSE-OPEN TOGGLE
 $( ".ui_box .header .close" ).click(function() {
 	$(this).parent().parent().parent(".ui_box").toggleClass('closed');

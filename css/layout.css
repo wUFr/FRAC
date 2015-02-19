@@ -38,12 +38,55 @@ body {
 			font-size: 11px;
 			color: #0091ff;
 		}
+		
+	/* MAIN MENU HOTDOG */
+	#admin_header a.hotdog {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		display: block;
+		cursor: pointer;
+		width: 40px;
+		height: 40px;
+		border: 1px solid #E5E5E5;
+		border-radius: 2px;
+	}
+
+	#admin_header a.hotdog:before {
+		display: block;
+		line-height: 40px;
+		text-align: center;
+		font-family: FontAwesome;
+		font-size: 22px;
+		content: "\f0c9";
+		color: gray;
+	}
+
+	#admin_header a.hotdog:hover {
+		border-color: silver;
+	}
+
+	#admin_header a.hotdog:hover:before {
+		color: black;
+	}
+
+	@media (min-width:601px){
+		#admin_header a.hotdog {
+			display: none;
+		}
+	}
 
 	/* GITHUB LINKS */
 	#admin_header .links {
 		position: absolute;
 		top: 40px;
 		right: 40px;
+	}
+	
+	@media (max-width:600px){
+		#admin_header .links {
+			display: none;
+		}
 	}
 
 		#admin_header .links a {
@@ -62,7 +105,7 @@ body {
 #admin_main {
 	position: relative;
 	overflow: hidden;
-	min-height:100%;
+	min-height: 100%;
 }
 
 #admin_main:after {
@@ -94,7 +137,7 @@ body {
 	border-right: 1px solid #e7ecf0;
 }
 
-@media (max-width:1300px){
+@media (max-width:1300px) and (min-width:601px){
 	#admin_sidebar {
 		width: 60px;
 	}
@@ -103,6 +146,22 @@ body {
 		width: 280px;
 		margin-right: -220px;
 		box-shadow: 0 0 40px rgba(0,0,50,0.1);
+	}
+}
+
+@media (max-width:600px){
+	#admin_sidebar {
+		float: none;
+		width: auto;
+		min-height: inherit;
+		height: 0 !important; /*overwrite JS */
+		border-right: 0;
+		border-bottom: 1px solid #e7ecf0;
+		display: none;
+	}
+	#admin_sidebar.opened {
+		height: auto !important;
+		display: block;
 	}
 }
 
@@ -115,13 +174,19 @@ body {
 		transition: 1s;
 	}
 
-	@media (max-width:1300px){
+	@media (max-width:1300px) and (min-width:601px){
 		#admin_sidebar > ul {
 			margin-left: -210px;	
 		}
 
 		#admin_sidebar:hover > ul {
 			margin-left: 0;
+		}
+	}
+	
+	@media (max-width:600px){
+		#admin_sidebar > ul {
+			width:auto;
 		}
 	}
 
