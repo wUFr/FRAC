@@ -55,9 +55,17 @@ h4.ui_title {
 	color: #5EBAFF;
 }
 
+.ui_text.info:after {
+	background: #5EBAFF;
+}
+
 .ui_text.warning:before {
 	content: "\f12a";
 	color: #FFB148;
+}
+
+.ui_text.warning:after {
+	background: #FFB148;
 }
 
 .ui_text.error:before {
@@ -65,9 +73,36 @@ h4.ui_title {
 	color: #FF4848;
 }
 
+.ui_text.error:after {
+	background: #FF4848;
+}
+
 .ui_text.confirm:before {
 	content: "\f00c";
 	color: #75DF00;
+}
+
+.ui_text.confirm:after {
+	background: #75DF00;
+}
+
+@media (max-width:900px){
+	.ui_text {
+		padding: 20px 0 20px 20px;
+	}
+
+	.ui_text:after {
+		position: absolute;
+		top: 20px;
+		left: 0;
+		bottom: 20px;
+		width: 5px;
+		content: "";
+	}
+
+	.ui_text:before {
+		display: none;
+	}
 }
 
 	.ui_text > .title {
