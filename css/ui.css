@@ -300,7 +300,8 @@ UI TABS - HORIZONTAL
 			color: black;
 		}
 
-		.ui_tabs_horizontal > li.selected a {
+		.ui_tabs_horizontal > li.selected a,
+		.ui_tabs_horizontal > li.ui-tabs-active a {
 			font-weight: bold;
 			color: black;
 		}

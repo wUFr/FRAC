@@ -145,7 +145,7 @@
 				<ul class="ui_tabs_horizontal">
 					<li class="item"><a href="#">First item</a></li>
 					<li class="item"><a href="#">Second item</a></li>
-					<li class="item selected"><a href="#">Third item</a></li>
+					<li class="item"><a href="#">Third item</a></li>
 					<li class="item"><a href="#">Fourth item</a></li>
 				</ul>
 				
@@ -161,15 +161,32 @@
 				
 				<div class="row">
 					<div class="col-md-12">
-						<div class="ui_area">
+						<div class="ui_area" id="test-tabs">
+							<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+							<script>
+							$(function() {
+								$( "#test-tabs" ).tabs();
+							});
+							</script>
 							<ul class="ui_tabs_horizontal">
-								<li class="item"><a href="#">First item</a></li>
-								<li class="item"><a href="#">Second item</a></li>
-								<li class="item selected"><a href="#">Third item</a></li>
-								<li class="item"><a href="#">Fourth item</a></li>
+								<li class="item"><a href="#test-tab-1">First item</a></li>
+								<li class="item"><a href="#test-tab-2">Second item</a></li>
+								<li class="item"><a href="#test-tab-3">Third item</a></li>
+								<li class="item"><a href="#test-tab-4">Fourth item</a></li>
 							</ul>
 							<div class="content">
-								tab content in box
+								<div id="test-tab-1">
+									tab 1
+								</div>
+								<div id="test-tab-2">
+									tab 2
+								</div>
+								<div id="test-tab-3">
+									tab 3
+								</div>
+								<div id="test-tab-4">
+									tab 4
+								</div>
 							</div>
 						</div>
 					</div>				
