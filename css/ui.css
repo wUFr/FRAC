@@ -240,6 +240,71 @@ h4.ui_title {
 	}
 
 
+/*
+
+UI AREA
+
+*/
+.ui_area {
+	margin: 5px 0;
+	border: 1px solid #F3F3F3;
+}
+
+.ui_area:after {
+	display: block;
+	width: 100%;
+	content: "";
+	clear: both;
+}
+
+	.ui_area > .content {
+		padding: 20px;
+	}
+
+/*
+
+UI TABS - HORIZONTAL
+
+*/
+.ui_tabs_horizontal {
+	border-bottom: 1px solid #F3F3F3;
+	list-style: none;
+	margin: 5px 0;
+}
+
+.ui_area > .ui_tabs_horizontal {
+	margin: 0px 15px 0 15px;
+}
+
+.ui_tabs_horizontal:after {
+	display: block;
+	width: 100%;
+	content: "";
+	clear: both;
+}
+
+	.ui_tabs_horizontal > li {
+		float: left;
+	}
+
+		.ui_tabs_horizontal > li a {
+			position: relative;
+			display: block;
+			padding: 10px 20px;
+			font-size: 14px;
+			color: #8c8c8c;
+			text-decoration: none;
+		}
+
+		.ui_tabs_horizontal > li a:hover {
+			color: black;
+		}
+
+		.ui_tabs_horizontal > li.selected a {
+			font-weight: bold;
+			color: black;
+		}
+
 
 
 

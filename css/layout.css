@@ -1,5 +1,10 @@
 /* CSS BY JIŘÍ BĚLSKÝ - FRAC PROJECT */ 
 
+html,
+body {
+	height:100%;
+	
+}
 
 body {
 	font-family: 'Open Sans', arial, sans-serif;
@@ -57,6 +62,7 @@ body {
 #admin_main {
 	position: relative;
 	overflow: hidden;
+	min-height:100%;
 }
 
 #admin_main:after {
