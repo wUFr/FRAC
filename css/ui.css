@@ -281,7 +281,7 @@ UI AREA
 
 */
 .ui_area {
-	margin: 5px 0;
+	margin: 10px 0;
 	border: 1px solid #F3F3F3;
 }
 
@@ -304,11 +304,14 @@ UI TABS - HORIZONTAL
 .ui_tabs_horizontal {
 	border-bottom: 1px solid #F3F3F3;
 	list-style: none;
-	margin: 5px 0;
+	margin: 10px 0;
 }
 
 .ui_area > .ui_tabs_horizontal {
-	margin: 0px 15px 0 15px;
+	position: relative;
+	z-index: 1;
+	margin: 0px;
+	background: #FBFBFB;
 }
 
 .ui_tabs_horizontal:after {
@@ -322,11 +325,16 @@ UI TABS - HORIZONTAL
 		float: left;
 	}
 
+	.ui_area > .ui_tabs_horizontal > li {
+		border-right: 1px solid #F3F3F3;
+		margin-bottom: -1px;
+	}
+
 		.ui_tabs_horizontal > li a {
 			position: relative;
 			display: block;
 			padding: 10px 20px;
-			font-size: 14px;
+			font-size: 13px;
 			color: #8c8c8c;
 			text-decoration: none;
 		}
@@ -339,6 +347,12 @@ UI TABS - HORIZONTAL
 		.ui_tabs_horizontal > li.ui-tabs-active a {
 			font-weight: bold;
 			color: black;
+		}
+
+		.ui_area > .ui_tabs_horizontal > li.selected,
+		.ui_area > .ui_tabs_horizontal > li.ui-tabs-active {
+			border-bottom: 1px solid white;
+			background: white;
 		}
 
 
