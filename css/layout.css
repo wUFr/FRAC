@@ -195,6 +195,52 @@ body {
 			position: relative;
 		}
 
+		#admin_sidebar > ul > li.opens {
+			padding-left: 25px;
+		}
+
+			#admin_sidebar > ul > li div.opener {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: 25px;
+				height: 46px; /** FIX THIS - GET HEIGHT OF A ELEMENT VIA JS */
+				background: #e3eaef;
+				cursor: pointer;
+			}
+
+				#admin_sidebar > ul > li div.opener:before {
+					position: absolute;
+					top: 50%;
+					margin-top: -10px;
+					display: block;
+					width: 25px;
+					height: 20px;
+					font-family: FontAwesome;
+					content: "\f078";
+					text-align: center;
+					line-height: 20px;
+				}
+
+				#admin_sidebar > ul > li div.opener.active:before {
+					content: "\f077";
+				}
+
+				#admin_sidebar > ul > li div.opener:hover:before {
+					color: black;
+				}
+
+			@media (max-width:600px){
+				#admin_sidebar > ul > li.opens {
+					padding-left: 50px;
+				}
+				#admin_sidebar > ul > li div.opener,
+				#admin_sidebar > ul > li div.opener:before {
+					width: 50px;
+				}
+			}
+
 			#admin_sidebar > ul > li > a {
 				position: relative;
 				display: block;
@@ -254,6 +300,45 @@ body {
 				#admin_sidebar > ul > li > a.files > span.icon:before {
 					content: "\f15b";
 				}
+				
+					#admin_sidebar > ul > li > ul {
+						list-style: none;
+						display: none;
+						background: #e3eaef;
+						margin-left: -25px;
+						margin-bottom: 10px;
+					}
+					
+					#admin_sidebar > ul > li.opened > ul {
+						display: block;
+					}
+
+					@media(max-width:600px){
+						#admin_sidebar > ul > li > ul {
+							margin-left: -50px;
+						}
+					}
+
+						#admin_sidebar > ul > li > ul li {
+							display:block;
+						}
+
+							#admin_sidebar > ul > li > ul li a {
+								display:block;
+								padding: 10px 15px 10px 40px;
+								text-decoration: none;
+							}
+
+							@media(max-width:600px){
+								#admin_sidebar > ul > li > ul li a {
+									padding-left: 65px;
+								}
+							}
+
+							#admin_sidebar > ul > li > ul li a:hover {
+								background: rgba(0,0,0,0.02);
+								
+							}
 
 /*
 
@@ -349,6 +434,13 @@ body {
 			margin-left: 20px;
 			font-weight: bold;
 			text-decoration: none;
+		}
+		
+		#admin_userbar .inside a.logout:before {
+			padding-right: 4px;
+			font-family: FontAwesome;
+			font-weight: normal;
+			content: "\f08b";
 		}
 		
 		#admin_userbar .inside a.logout:hover {

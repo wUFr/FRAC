@@ -3,6 +3,13 @@ $( "#toggle_user_menu" ).click(function() {
 	$("#toggle_user_menu").toggleClass("active");
 });
 
+
+// MAIN MENU SUB ITEMS TOGGLE
+$( "#admin_sidebar div.opener" ).click(function() {
+	$(this).parent("li").toggleClass('opened');
+	$(this).toggleClass('active')
+});
+
 // FOR MOBILE - HOTDOG
 $( "#main_menu_hotdog" ).click(function() {
 	$("#admin_sidebar").toggleClass("opened");
