@@ -1,7 +1,10 @@
 # FRAC
 Free Responsive Admin Center
+**version 0.2 released**
 
-Development can be broken and full of non-finished work
+
+**Online demo:**
+http://frac.gamesbase.cz/demo/
 
 
 **Licence:**
