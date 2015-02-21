@@ -66,18 +66,92 @@
 				<h2 class="ui_title">Hello world!</h2>
 				<h3 class="ui_title">Hello world!</h3>
 				<h4 class="ui_title">Hello world!</h4>
-	
-				<div class="row">
-					<!-- BOOTSTRAP TEST -->
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="ui_text info">
-							<div class="title">Informations</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum egestas orci, quis sagittis justo pharetra maximus. 
-							Phasellus felis dui, fringilla sed semper at, tempus vel elit. Fusce tellus metus, suscipit quis ex quis, tincidunt consequat risus. 
-							Etiam in efficitur elit. Aenean malesuada sollicitudin neque vitae auctor. Nam ac tellus semper, pellentesque elit et, congue felis. 
-							Sed maximus erat odio, vel bibendum lectus ornare id. Sed imperdiet risus nisl, nec tristique enim laoreet vitae.</p>
+
+				<div class="ui_box">
+					<div class="header">
+						<div class="title">
+							Forms
 						</div>
 					</div>
+					<div class="content">
+						<div class="ui_form">
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<label class="item_label">Basic text input</label>
+								</div>
+								<div class="col-md-8 col-sm-6 col-xs-12">
+									<input class="input_text" type="text" name="" placeholder="Enter some text here" size="50" />
+								</div>
+							</div>
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<label class="item_label required">Requied item</label>
+								</div>
+								<div class="col-md-8 col-sm-6 col-xs-12">
+									<input class="input_text" type="text" name="" placeholder="Enter some text here" size="50" />
+								</div>
+							</div>
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<label class="item_label">Disabled input</label>
+								</div>
+								<div class="col-md-8 col-sm-6 col-xs-12">
+									<input class="input_text disabled" type="text" name="" value="You aint gonna write here" size="50" disabled="disabled" />
+								</div>
+							</div>
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<label class="item_label">Basic select</label>
+								</div>
+								<div class="col-md-8 col-sm-6 col-xs-12">
+									<select class="input_select">
+										<option>Select some value</option>
+										<option>Or RIOT</option>
+									</select>
+								</div>
+							</div>
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<label class="item_label">Small textarea</label>
+								</div>
+								<div class="col-md-8 col-sm-6 col-xs-12">
+									<textarea class="input_textarea">Yolo</textarea>
+								</div>
+							</div>
+							<div class="item row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<label class="item_label">Big textarea</label>
+								</div>
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<textarea class="input_textarea big">Yolo</textarea>
+								</div>
+							</div>
+						</div>
+						<div class="ui_actions foot">
+							<button class="ui_button blue">Just button</button>
+							<button class="ui_button dark">Extra button</button>
+							<button class="ui_button light">Light</button>
+							<button class="ui_button green">Green</button>
+							<button class="ui_button orange">Orange</button>
+							<button class="ui_button red">Red</button>
+						</div>
+						<div class="ui_actions foot">
+							<button class="ui_button green save">Save</button>
+							<button class="ui_button dark preview">Show preview</button>
+							<button class="ui_button light refresh">Reset</button>
+							<button class="ui_button blue continue">Continue</button>
+							<button class="ui_button orange search">Search</button>
+							<button class="ui_button red delete">Delete</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="ui_text info">
+					<div class="title">Informations</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum egestas orci, quis sagittis justo pharetra maximus. 
+					Phasellus felis dui, fringilla sed semper at, tempus vel elit. Fusce tellus metus, suscipit quis ex quis, tincidunt consequat risus. 
+					Etiam in efficitur elit. Aenean malesuada sollicitudin neque vitae auctor. Nam ac tellus semper, pellentesque elit et, congue felis. 
+					Sed maximus erat odio, vel bibendum lectus ornare id. Sed imperdiet risus nisl, nec tristique enim laoreet vitae.</p>
 				</div>
 
 				<div class="ui_text warning">
@@ -134,14 +208,14 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<ul class="ui_tabs_horizontal">
 					<li class="item"><a href="#">First item</a></li>
 					<li class="item"><a href="#">Second item</a></li>
 					<li class="item"><a href="#">Third item</a></li>
 					<li class="item"><a href="#">Fourth item</a></li>
 				</ul>
-				
+
 				<div class="row">
 					<div class="col-md-12">
 						<div class="ui_area">
@@ -151,7 +225,7 @@
 						</div>
 					</div>				
 				</div>
-				
+
 				<div class="row">
 					<div class="col-md-12">
 						<div class="ui_area" id="test-tabs">
@@ -224,14 +298,9 @@
 						</div>
 					</div>
 				</div>
-				
-				
-
 			</section>
 		</section>
 	</section>
-
 	<script src="js/functions.js"></script>
-
 </body>
 </html>
