@@ -206,7 +206,7 @@ body {
 				bottom: 0;
 				width: 25px;
 				height: 46px; /** FIX THIS - GET HEIGHT OF A ELEMENT VIA JS */
-				background: #e3eaef;
+				/*background: #e3eaef;*/
 				cursor: pointer;
 			}
 
@@ -304,7 +304,7 @@ body {
 					#admin_sidebar > ul > li > ul {
 						list-style: none;
 						display: none;
-						background: #e3eaef;
+						border-bottom: 2px solid #e3eaef;
 						margin-left: -25px;
 						margin-bottom: 10px;
 					}

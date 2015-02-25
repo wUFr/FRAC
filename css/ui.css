@@ -471,6 +471,10 @@ UI BUTTONS
 	background: #FBFBFB;
 	margin: 0 3px 5px 0;
 }
+.ui_button.small {
+	font-size:13px;
+	padding:3px 10px 6px 10px;
+}
 
 @media (max-width:600px){
 	.ui_button {
@@ -495,33 +499,42 @@ UI BUTTONS
 .ui_button:hover {
 	opacity: 0.8;
 }
+.ui_button.color_hover:hover {
+	opacity: 1;
+}
 
-	.ui_button.blue {
+	.ui_button.blue,
+	.ui_button.hover_blue:hover {
 		background: #46a3ea;
 		color: white;
 	}
 
-	.ui_button.dark {
+	.ui_button.dark,
+	.ui_button.hover_dark:hover {
 		background: #3C3C3C;
 		color: white;
 	}
 
-	.ui_button.light {
+	.ui_button.light,
+	.ui_button.hover_light:hover {
 		background: #F9F9F9;
 		color: #676767;
 	}
 
-	.ui_button.green {
+	.ui_button.green,
+	.ui_button.hover_green:hover {
 		background: #75DF00;
 		color: white;
 	}
 
-	.ui_button.orange {
+	.ui_button.orange,
+	.ui_button.hover_orange:hover {
 		background: #FFB148;
 		color: white;
 	}
 
-	.ui_button.red {
+	.ui_button.red,
+	.ui_button.hover_red:hover {
 		background: #FF4848;
 		color: white;
 	}
@@ -555,3 +568,110 @@ UI BUTTONS
 .ui_button.delete:before {
 	content: "\f00d";
 }
+
+/*
+
+UI DATA LIST (TABLE)
+
+*/
+table.ui_data_list {
+	margin: 10px 0;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.ui_box table.ui_data_list  {
+	margin: 0;
+}
+
+	table.ui_data_list thead {}
+
+		table.ui_data_list thead tr {}
+
+			table.ui_data_list thead tr th {
+				text-align: left;
+				font-size: 13px;
+				padding: 10px;
+				border-bottom: 1px solid #F3F3F3;
+			}
+
+			table.ui_data_list thead tr th.options {
+				width: 300px;
+				text-align: right;
+			}
+
+	table.ui_data_list tbody {}
+
+		table.ui_data_list tbody tr {}
+
+			table.ui_data_list tbody tr td {
+				padding: 10px;
+				text-align: left;
+				border-bottom: 1px solid #F3F3F3;
+			}
+
+			table.ui_data_list tbody tr:nth-child(even) td{
+				background: #FDFEFF
+			}
+
+			.ui_box table.ui_data_list tbody tr:nth-child(even) td {
+				background: #F8F8F8
+			}
+
+			table.ui_data_list tbody tr:hover > td {
+				background: #F9FCFF;
+			}
+
+			.ui_box table.ui_data_list tbody tr:hover > td {
+				background: white;
+			}
+
+			table.ui_data_list tbody tr td.options {
+				padding: 5px 10px 0 10px;
+				text-align: right;
+			}
+
+/*
+
+UI FLAGS
+
+*/
+.ui_flag {
+	display: inline-block;
+	margin: 0 2px;
+	padding: 1px 4px;
+	border-radius: 4px;
+	font-size: 11px;
+	color: white;
+}
+
+.ui_flag.red {
+	background: #FF4848;
+}
+
+.ui_flag.orange {
+	background: #FFB148;
+}
+
+.ui_flag.green {
+	background: #75DF00;
+}
+
+.ui_flag.blue {
+	background: #46a3ea;
+}
+
+.ui_flag.dark {
+	background: #3C3C3C;
+}
+
+.ui_flag.light {
+	background: #E4E4E4;
+	color: #676767;
+}
+
+
+
+
+
+
