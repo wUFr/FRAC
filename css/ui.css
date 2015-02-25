@@ -386,7 +386,7 @@ UI FORM
 
 		.ui_form .item .input_text {
 			max-width: 100%;
-			line-height: 30px;
+			height: 30px;
 			border: 1px solid #E5E5E5;
 			padding: 0 10px;
 		}
