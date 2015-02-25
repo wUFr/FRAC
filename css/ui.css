@@ -466,19 +466,22 @@ UI BUTTONS
 .ui_button {
 	position: relative;
 	display: inline-block;
-	padding: 7px 15px 10px 15px;
+	padding: 7px 15px 9px 15px;
 	border: 0;
-	background: #FBFBFB;
-	margin: 0 3px 5px 0;
+	background: transparent;
+	color: #676767;
+	margin: 0 3px 0 0;
 }
+
 .ui_button.small {
-	font-size:13px;
-	padding:3px 10px 6px 10px;
+	font-size: 13px;
+	padding: 4px 10px 6px 10px;
+	margin: 0 3px 0 0;
 }
 
 @media (max-width:1000px){
 	.ui_button.tablet_icon > span {
-		display:none;
+		display: none;
 	}
 }
 
@@ -488,13 +491,14 @@ UI BUTTONS
 		padding-bottom: 13px;
 		display: block;
 		width: 100%;
+		margin-bottom: 5px;
 	}
 	.ui_button.mobile_icon > span {
-		display:none;
+		display: none;
 	}
 }
 
-.ui_button:after {
+/*.ui_button:after {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -503,7 +507,7 @@ UI BUTTONS
 	content: "";
 	border: 1px  solid rgba(0,0,0,0.1);
 	border-bottom-width: 3px;
-}
+}*/
 
 .ui_button:hover {
 	opacity: 0.8;
@@ -550,7 +554,7 @@ UI BUTTONS
 	
 .ui_button:before {
 	font-family: FontAwesome;
-	margin-right: 10px;
+	margin-right: 8px;
 	margin-left: -5px;
 }
 
@@ -660,7 +664,7 @@ table.ui_data_list {
 			}
 
 			table.ui_data_list tbody tr td.options {
-				padding: 5px 10px 0 10px;
+				padding: 6px 10px 5px 10px;
 				text-align: right;
 				white-space: nowrap;
 			}
@@ -823,33 +827,3 @@ HIDING CLASSES
 		display: none;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
