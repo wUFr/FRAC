@@ -29,11 +29,26 @@ $( ".ui_message .close" ).click(function() {
 
 // MAIN CONTENT WINDOWS RESIZE
 
+/*
 
-var height = $("#admin_main").height();
-$('#admin_sidebar').height(height);
+NEED TO REMAKE THIS CRAP - PROBABLY JS FOR HOVER ACTION ON SIDEBAR; ABSOLUTE BACKGROUND UNDER SIDEBAR TO FAKE 100% HEIGHT
 
-$(window).resize(function(){
-   var height = $("#admin_main").height();
-   $('#admin_sidebar').height(height);
-})
+*/
+
+if($(window).width()>600){
+	var height = $("#admin_main").height();
+	$('#admin_sidebar').height(height);
+}
+
+$(window).resize(function() {
+	if($(window).width()>600){
+		setTimeout(function() {
+			var height = $("#admin_main").height();
+			$('#admin_sidebar').height(height);
+		}, 1000);
+		
+	}
+	else {
+		$('#admin_sidebar').css('height' , 'auto');
+	}
+});
