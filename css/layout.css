@@ -33,12 +33,18 @@ body {
 		line-height: 25px;
 	}
 
+	@media (max-width:600px){
+		#admin_header .title {
+			left: 15px;
+		}
+	}
+
 		#admin_header .title small {
 			display: block;
 			font-size: 11px;
 			color: #0091ff;
 		}
-		
+
 	/* MAIN MENU HOTDOG */
 	#admin_header a.hotdog {
 		position: absolute;
@@ -82,7 +88,7 @@ body {
 		top: 40px;
 		right: 40px;
 	}
-	
+
 	@media (max-width:600px){
 		#admin_header .links {
 			display: none;
@@ -96,7 +102,7 @@ body {
 		#admin_header .links a:hover {
 			color: #46a3ea;
 		}
-	
+
 /*
 
 	MAIN - WAPPER OF SIDEBAR AND CONTENT
@@ -176,10 +182,10 @@ body {
 			margin-left: 0;
 		}
 	}
-	
+
 	@media (max-width:600px){
 		#admin_sidebar > ul {
-			width:auto;
+			width: auto;
 		}
 	}
 
@@ -313,11 +319,11 @@ body {
 					}
 
 						#admin_sidebar > ul > li > ul li {
-							display:block;
+							display: block;
 						}
 
 							#admin_sidebar > ul > li > ul li a {
-								display:block;
+								display: block;
 								padding: 10px 15px 10px 40px;
 								text-decoration: none;
 							}
@@ -422,27 +428,27 @@ body {
 			line-height: 15px;
 			text-align: center;
 		}
-	
+
 		#admin_userbar .inside > span.active:before {
 			-webkit-transform: rotate(180deg);
 			-moz-transform: rotate(180deg);
 			-ms-transform: rotate(180deg);
 			transform: rotate(180deg);
 		}
-		
+
 		#admin_userbar .inside a.logout {
 			margin-left: 20px;
 			font-weight: bold;
 			text-decoration: none;
 		}
-		
+
 		#admin_userbar .inside a.logout:before {
 			padding-right: 4px;
 			font-family: FontAwesome;
 			font-weight: normal;
 			content: "\f08b";
 		}
-		
+
 		#admin_userbar .inside a.logout:hover {
 			color: #232323;
 		}
@@ -487,11 +493,72 @@ body {
 				color: #46a3ea;
 			}
 
+	/* ADMIN PAGE PATH */
+	#admin_pagepath {
+		list-style: none;
+		padding: 10px 0;
+		margin: 10px 30px 0 30px;
+		border-bottom: 1px solid #F4F4F4;
+	}
 
+	@media (max-width:600px){
+		#admin_pagepath {
+			margin: 0 15px 0 15px;
+		}
+	}
+
+	#admin_pagepath:after {
+		display: block;
+		width: 100%;
+		content: "";
+		clear: both;
+	}
+
+		#admin_pagepath > li {
+			display: inline;
+			font-size: 12px;
+		}
+
+		#admin_pagepath > li:before {
+			font-family: FontAwesome;
+			content: "\f105";
+			padding-right: 7px;
+			padding-left: 3px;
+			font-size: 14px;
+			color: #747474;
+		}
+
+		#admin_pagepath > li:first-child:before {
+			font-family: FontAwesome;
+			content: "\f015";
+			padding-right: 7px;
+			font-size: 14px;
+		}
+
+			#admin_pagepath > li > a {
+				padding: 0 4px;
+				text-decoration: none;
+				color: #626262;
+			}
+
+			#admin_pagepath > li > a:hover {
+				color: #46a3ea;
+			}
+
+			#admin_pagepath > li:last-child > a {
+				font-weight: bold;
+				color: black;
+			}
 
 	/* MAIN CONTENT FOR ACTUAL PAGE */
 	#admin_content > .inside {
-		padding: 30px;
+		padding: 20px 30px;
+	}
+	
+	@media (max-width:600px){
+		#admin_content > .inside {
+			padding: 5px 15px;
+		}
 	}
 
 	#admin_content > .inside:after {
@@ -500,16 +567,3 @@ body {
 		clear: both;
 		content: "";
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-

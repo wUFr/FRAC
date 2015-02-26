@@ -542,20 +542,10 @@ UI BUTTONS
 	}
 }
 
-/*.ui_button:after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0px;
-	content: "";
-	border: 1px  solid rgba(0,0,0,0.1);
-	border-bottom-width: 3px;
-}*/
-
 .ui_button:hover {
 	opacity: 0.8;
 }
+
 .ui_button.color_hover:hover {
 	opacity: 1;
 }
@@ -688,7 +678,6 @@ table.ui_data_list {
 			table.ui_data_list tbody tr td {
 				padding: 10px;
 				text-align: left;
-				
 			}
 
 			table.ui_data_list tbody tr:nth-child(even) td{
