@@ -391,6 +391,10 @@ UI FORM
 			padding: 0 10px;
 		}
 
+		.ui_form .item .input_text.after {
+			float: left;
+		}
+
 		.ui_form .item .input_text.disabled {
 			background: #F7F7F7;
 			color: #858585;
@@ -435,6 +439,46 @@ UI FORM
 			}
 		}
 
+		.ui_form .item .input_wrap {
+			display: inline-block;
+		}
+
+		.ui_form .item .input_after {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			padding: 0 5px;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #E5E5E5;
+			background: #F0F0F0;
+			font-size: 12px;
+			margin-left: -1px;
+		}
+
+		.ui_form .item .input_before {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			padding: 0 5px;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #E5E5E5;
+			background: #F0F0F0;
+			font-size: 12px;
+			margin-right: -1px;
+			float: left;
+		}
+
+		.ui_form .item .form-error {
+			display: inline-block;
+			padding: 3px 5px;
+			font-size: 12px;
+			color: #FF4848;
+		}
+
 /*
 
 UI ACTIONS
@@ -447,13 +491,13 @@ UI ACTIONS
 
 .ui_actions.foot {
 	margin: 7px -10px -10px -10px;
-	padding: 10px 10px 5px 10px;
+	padding: 10px;
 	border-top: 1px solid #F3F3F3;
 }
 
 .ui_actions.head {
 	margin: -10px -10px 7px -10px;
-	padding: 10px 10px 5px 10px;
+	padding: 10px;
 	border-bottom: 1px solid #F3F3F3;
 }
 
