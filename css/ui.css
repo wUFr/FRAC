@@ -355,6 +355,60 @@ UI TABS - HORIZONTAL
 
 /*
 
+UI TABS VERTICAL
+
+*/
+.ui_tabs_vertical_outside {
+	background:#FBFBFB;
+}
+
+.ui_tabs_vertical {
+	list-style:none;
+	border-right:1px solid #F3F3F3;
+	border-bottom:1px solid #F3F3F3;
+	margin-bottom:-1px;
+	margin-left:-15px;
+	margin-right:-15px;
+}
+
+	.ui_tabs_vertical > li {
+		display:block;
+		border-bottom:1px solid #F3F3F3;
+	}
+	.ui_tabs_vertical > li:last-child {
+		border-bottom:0;
+	}
+	
+		.ui_tabs_vertical > li a {
+			display:block;
+			padding:10px 15px;
+			font-size: 13px;
+			color: #8c8c8c;
+			text-decoration: none;
+		}
+		
+		.ui_tabs_vertical > li a:hover {
+			color: black;
+		}
+		
+		.ui_tabs_vertical > li.selected a,
+		.ui_tabs_vertical > li.ui-tabs-active a {
+			font-weight: bold;
+			color: black;
+		}
+
+		.ui_area .ui_tabs_vertical > li.selected,
+		.ui_area .ui_tabs_vertical > li.ui-tabs-active {
+			background: white;
+		}
+
+.ui_tabs_vertical_content {
+	padding:10px 0;
+}		
+
+
+/*
+
 UI FORM
 
 */
@@ -516,6 +570,10 @@ UI BUTTONS
 	color: #676767;
 	margin: 0 3px 0 0;
 }
+.ui_button.in_form {
+	margin: 0 -4px 0 0;
+	padding: 5px 15px 6px 15px;
+}
 
 .ui_button.small {
 	font-size: 13px;
@@ -596,6 +654,10 @@ UI BUTTONS
 	margin-left: 0;
 	margin-right: 8px;
 }
+.ui_button.no_text:before {
+	margin-right: -3px;
+	margin-left: -3px;
+}
 
 @media (max-width:1000px){
 	.ui_button.tablet_icon:before {
@@ -609,6 +671,14 @@ UI BUTTONS
 		margin-right: 0;
 		margin-left: 0;
 	}
+}
+
+.ui_button.add:before {
+	content: "\f067";
+}
+
+.ui_button.upload:before {
+	content: "\f093";
 }
 
 .ui_button.save:before {

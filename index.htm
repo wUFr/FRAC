@@ -269,6 +269,34 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<label class="item_label required">Image</label>
+								</div>
+								<div class="col-md-8 col-sm-6 col-xs-12">
+									<div class="input_wrap">
+										
+										<input class="input_text after" type="text" name="" placeholder="select image" size="15" data-validation="required" />
+										<button class="ui_button in_form no_text add green"></button>
+										<button class="ui_button in_form no_text delete red"></button>
+									</div>
+								</div>
+							</div>
+							
+							<div class="item row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<label class="item_label required">File</label>
+								</div>
+								<div class="col-md-8 col-sm-6 col-xs-12">
+									<div class="input_wrap">
+										
+										<input class="input_text after" type="text" name="" placeholder="add file" size="15" data-validation="required" />
+										<button class="ui_button in_form upload green">Add file</button>
+									</div>
+								</div>
+							</div>
+							
 							<div class="item row">
 								<div class="col-md-4 col-sm-6 col-xs-12">
 									<label class="item_label">Disabled input</label>
@@ -419,22 +447,87 @@
 								<li class="item"><a href="#test-tab-3">Third item</a></li>
 								<li class="item"><a href="#test-tab-4">Fourth item</a></li>
 							</ul>
-							<div class="content">
+							<div class="content ui_tabs_horizontal_content">
 								<div id="test-tab-1">
-									tab 1
+									<div class="ui_message info">
+										<a class="close"></a>
+										<div class="title">Informations</div>
+										<p>lorem ipsum dolor info box text</p>
+									</div>
 								</div>
 								<div id="test-tab-2">
-									tab 2
+									<div class="ui_message confirm">
+										<a class="close"></a>
+										<div class="title">Confirm</div>
+										<p>lorem ipsum dolor info box text</p>
+									</div>
 								</div>
 								<div id="test-tab-3">
-									tab 3
+									<div class="ui_message warning">
+										<a class="close"></a>
+										<div class="title">Warning</div>
+										<p>lorem ipsum dolor info box text</p>
+									</div>
 								</div>
 								<div id="test-tab-4">
-									tab 4
+									<div class="ui_message error">
+										<a class="close"></a>
+										<div class="title">Error</div>
+										<p>lorem ipsum dolor info box text</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>				
+				</div>
+
+				<div class="ui_area" id="test-tabs2">
+					<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+					<script>
+					$(function() {
+						$( "#test-tabs2" ).tabs();
+					});
+					</script>
+					<div class="col-md-3 col-sm-4 col-xs-12 ui_tabs_vertical_outside">
+						<ul class="ui_tabs_vertical">
+							<li class="item"><a href="#test-tab-01">First item</a></li>
+							<li class="item"><a href="#test-tab-02">Second item</a></li>
+							<li class="item"><a href="#test-tab-03">Third item</a></li>
+							<li class="item"><a href="#test-tab-04">Fourth item</a></li>
+						</ul>
+					</div>
+					<div class="col-md-9 col-sm-8 col-xs-12">
+						<div class="content ui_tabs_vertical_content">
+							<div id="test-tab-01">
+								<div class="ui_message info">
+									<a class="close"></a>
+									<div class="title">Informations</div>
+									<p>lorem ipsum dolor info box text</p>
+								</div>
+							</div>
+							<div id="test-tab-02">
+								<div class="ui_message confirm">
+									<a class="close"></a>
+									<div class="title">Confirm</div>
+									<p>lorem ipsum dolor info box text</p>
+								</div>
+							</div>
+							<div id="test-tab-03">
+								<div class="ui_message warning">
+									<a class="close"></a>
+									<div class="title">Warning</div>
+									<p>lorem ipsum dolor info box text</p>
+								</div>
+							</div>
+							<div id="test-tab-04">
+								<div class="ui_message error">
+									<a class="close"></a>
+									<div class="title">Error</div>
+									<p>lorem ipsum dolor info box text</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="row">
