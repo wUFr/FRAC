@@ -359,38 +359,39 @@ UI TABS VERTICAL
 
 */
 .ui_tabs_vertical_outside {
-	background:#FBFBFB;
+	background: #FBFBFB;
 }
 
 .ui_tabs_vertical {
-	list-style:none;
-	border-right:1px solid #F3F3F3;
-	border-bottom:1px solid #F3F3F3;
-	margin-bottom:-1px;
-	margin-left:-15px;
-	margin-right:-15px;
+	list-style: none;
+	border-right: 1px solid #F3F3F3;
+	border-bottom: 1px solid #F3F3F3;
+	margin-bottom: -1px;
+	margin-left: -15px;
+	margin-right: -15px;
 }
 
 	.ui_tabs_vertical > li {
-		display:block;
-		border-bottom:1px solid #F3F3F3;
+		display: block;
+		border-bottom: 1px solid #F3F3F3;
 	}
+
 	.ui_tabs_vertical > li:last-child {
-		border-bottom:0;
+		border-bottom: 0;
 	}
-	
+
 		.ui_tabs_vertical > li a {
-			display:block;
-			padding:10px 15px;
+			display: block;
+			padding: 10px 15px;
 			font-size: 13px;
 			color: #8c8c8c;
 			text-decoration: none;
 		}
-		
+
 		.ui_tabs_vertical > li a:hover {
 			color: black;
 		}
-		
+
 		.ui_tabs_vertical > li.selected a,
 		.ui_tabs_vertical > li.ui-tabs-active a {
 			font-weight: bold;
@@ -403,7 +404,7 @@ UI TABS VERTICAL
 		}
 
 .ui_tabs_vertical_content {
-	padding:10px 0;
+	padding: 10px 0;
 }		
 
 
