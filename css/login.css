@@ -1,0 +1,100 @@
+/* CSS BY JIŘÍ BĚLSKÝ - FRAC PROJECT */ 
+
+html,
+body {
+	height: 100%;
+	
+}
+
+body {
+	font-family: 'Open Sans', arial, sans-serif;
+	font-size: 14px;
+	color: #525b60;
+}
+
+#login_header {
+	padding: 0 20px;
+	background: #f3f6f8;
+	height: 40%;
+}
+
+	#login_header > .inside {
+		position: relative;
+		width: 0 auto;
+		height: 100%;
+	}
+
+	#login_header .github {
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		font-size: 14px;
+		text-decoration: none;
+	}
+
+	#login_header .github:hover {
+		color: #0091ff;
+	}
+
+	#login_header .title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -100px;
+		margin-top:-50px;
+		font-size: 70px;
+		color: #323536;
+		line-height: 40px;
+		display: block;
+		width: 200px;
+		text-align: center;
+	}
+
+		#login_header .title small {
+			display: block;
+			font-size: 11px;
+			color: #0091ff;
+		}
+
+#login_form {
+	padding: 50px 20px;
+}
+
+	#login_form form {
+		overflow: hidden;
+	}
+
+		#login_form form input {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #E5E5E5;
+			margin: 10px 0;
+			outline: none;
+		}
+
+		#login_form form input:focus {
+			border-color: silver;
+		}
+
+		#login_form form button {
+			float: right;
+			display: inline-block;
+			padding: 7px 15px 9px 15px;
+			border: 0;
+			background: #46a3ea;
+			color: white;
+			margin: 10px 0 0 0;
+		}
+
+		#login_form form button:before {
+			padding-right: 10px;
+			font-family: FontAwesome;
+			content: "\f090";
+		}
+
+		#login_form form button:hover {
+			opacity: 0.8;
+		}
+
+
+
