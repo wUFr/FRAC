@@ -4,7 +4,6 @@ Free Responsive Admin Center
 
 
 
-
 **Online demo:**
 http://frac.gamesbase.cz/demo/
 
