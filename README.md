@@ -1,6 +1,6 @@
 # FRAC
 Free Responsive Admin Center
-**version 0.2 released**
+**version 0.4 released**
 
 
 
