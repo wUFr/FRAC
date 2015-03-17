@@ -1,5 +1,4 @@
 /* CSS BY JIŘÍ BĚLSKÝ - FRAC PROJECT */ 
-
 html,
 body {
 	height:100%;
@@ -205,7 +204,6 @@ body {
 				bottom: 0;
 				width: 25px;
 				height: 46px; /** FIX THIS - GET HEIGHT OF A ELEMENT VIA JS */
-				/*background: #e3eaef;*/
 				cursor: pointer;
 			}
 
@@ -554,7 +552,7 @@ body {
 	#admin_content > .inside {
 		padding: 20px 30px;
 	}
-	
+
 	@media (max-width:600px){
 		#admin_content > .inside {
 			padding: 5px 15px;

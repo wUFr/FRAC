@@ -1,5 +1,4 @@
 /* CSS BY JIŘÍ BĚLSKÝ - FRAC PROJECT */ 
-
 html,
 body {
 	height: 100%;
@@ -95,6 +94,3 @@ body {
 		#login_form form button:hover {
 			opacity: 0.8;
 		}
-
-
-
