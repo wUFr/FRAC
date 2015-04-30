@@ -5,6 +5,7 @@ $( "#toggle_user_menu" ).click(function() {
 
 
 // MAIN MENU SUB ITEMS TOGGLE
+// TODO: Auto opening via clicking on parent item in menu (no arrow needed)
 $( "#admin_sidebar div.opener" ).click(function() {
 	$(this).parent("li").toggleClass('opened');
 	$(this).toggleClass('active')
