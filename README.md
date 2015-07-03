@@ -5,7 +5,7 @@ Free Responsive Admin Center
 
 
 **Online demo:**
-http://frac.gamesbase.cz/demo/
+http://wufr.net/frac/
 
 
 **Licence:**
