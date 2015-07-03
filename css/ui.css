@@ -40,6 +40,10 @@ h4.ui_title {
 	padding: 20px 0 20px 100px;
 }
 
+.ui_text.simple {
+	padding: 20px 0;
+}
+
 .ui_text:before {
 	position: absolute;
 	top: 40px;
@@ -582,7 +586,7 @@ UI BUTTONS
 	margin: 0 3px 0 0;
 }
 
-@media (max-width:1000px){
+@media (max-width:1000px) and (min-width:751px){
 	.ui_button.tablet_icon > span {
 		display: none;
 	}
@@ -660,7 +664,7 @@ UI BUTTONS
 	margin-left: -3px;
 }
 
-@media (max-width:1000px){
+@media (max-width:1000px) and (min-width:751px){
 	.ui_button.tablet_icon:before {
 		margin-right: 0;
 		margin-left: 0;
@@ -717,15 +721,21 @@ UI DATA LIST (TABLE)
 */
 table.ui_data_list {
 	margin: 10px 0;
-	border-spacing: 0;
+	border-collapse: collapse;
 	width: 100%;
 }
 
-.ui_box table.ui_data_list  {
+.ui_box table.ui_data_list {
 	margin: 0;
 }
 
 	table.ui_data_list thead {}
+	
+	@media (max-width:750px){
+		table.ui_data_list thead {
+			display: none;
+		}
+	}
 
 		table.ui_data_list thead tr {}
 
@@ -750,27 +760,55 @@ table.ui_data_list {
 				padding: 10px;
 				text-align: left;
 			}
-
-			table.ui_data_list tbody tr:nth-child(even) td{
-				background: #FDFEFF
+			
+			@media (max-width:750px){
+				table.ui_data_list tbody tr {
+					border-bottom-width:0;
+				}
+				table.ui_data_list tbody tr td {
+					background: #fcfcfc;
+					border: 1px solid #ebebeb;
+					display: block;
+					padding: 10px;
+					margin-bottom: -1px;
+				}
+				.ui_box table.ui_data_list tbody tr td {
+					background: white;
+				}
+				
+				table.ui_data_list tbody tr td:last-child {
+					margin-bottom: 10px;
+				}
+				table.ui_data_list tbody tr td:before {
+					content:attr(data-title) " ";
+					font-weight: bold;
+				}
 			}
+			
+			@media (min-width:751px){
 
-			.ui_box table.ui_data_list tbody tr:nth-child(even) td {
-				background: #F8F8F8
-			}
-
-			table.ui_data_list tbody tr:hover > td {
-				background: #F9FCFF;
-			}
-
-			.ui_box table.ui_data_list tbody tr:hover > td {
-				background: white;
-			}
-
-			table.ui_data_list tbody tr td.options {
-				padding: 6px 10px 5px 10px;
-				text-align: right;
-				white-space: nowrap;
+				table.ui_data_list tbody tr:nth-child(even) td{
+					background: #FDFEFF
+				}
+	
+				.ui_box table.ui_data_list tbody tr:nth-child(even) td {
+					background: #F8F8F8
+				}
+	
+				table.ui_data_list tbody tr:hover > td {
+					background: #F9FCFF;
+				}
+	
+				.ui_box table.ui_data_list tbody tr:hover > td {
+					background: white;
+				}
+	
+				table.ui_data_list tbody tr td.options {
+					padding: 6px 10px 5px 10px;
+					text-align: right;
+					white-space: nowrap;
+				}
+			
 			}
 
 /*

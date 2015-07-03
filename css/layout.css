@@ -48,7 +48,7 @@ body {
 	#admin_header a.hotdog {
 		position: absolute;
 		top: 30px;
-		right: 30px;
+		right: 20px;
 		display: block;
 		cursor: pointer;
 		width: 40px;
@@ -119,7 +119,7 @@ body {
 	
 */
 #admin_sidebar {
-	padding: 15px;
+	padding: 15px 15px 15px 0px;
 	position: relative;
 	z-index: 2;
 	background: #f3f6f8;
@@ -156,6 +156,7 @@ body {
 		border-right: 0;
 		border-bottom: 1px solid #e7ecf0;
 		display: none;
+		padding: 5px 0;
 	}
 	#admin_sidebar.opened {
 		height: auto !important;
@@ -165,7 +166,7 @@ body {
 
 	#admin_sidebar > ul {
 		list-style: none;
-		width: 250px;
+		width: 265px;
 		-webkit-transition: 1s;
 		-moz-transition: 1s;
 		-ms-transition: 1s;
@@ -194,17 +195,18 @@ body {
 		}
 
 		#admin_sidebar > ul > li.opens {
-			padding-left: 25px;
+			
 		}
 
 			#admin_sidebar > ul > li div.opener {
 				position: absolute;
 				top: 0;
-				left: 0;
+				left: 0px;
 				bottom: 0;
-				width: 25px;
+				width: 40px;
 				height: 46px; /** FIX THIS - GET HEIGHT OF A ELEMENT VIA JS */
 				cursor: pointer;
+				z-index: 20;
 			}
 
 				#admin_sidebar > ul > li div.opener:before {
@@ -212,7 +214,7 @@ body {
 					top: 50%;
 					margin-top: -10px;
 					display: block;
-					width: 25px;
+					width: 40px;
 					height: 20px;
 					font-family: FontAwesome;
 					content: "\f078";
@@ -229,19 +231,16 @@ body {
 				}
 
 			@media (max-width:600px){
-				#admin_sidebar > ul > li.opens {
-					padding-left: 50px;
-				}
 				#admin_sidebar > ul > li div.opener,
 				#admin_sidebar > ul > li div.opener:before {
-					width: 50px;
+					width: 40px;
 				}
 			}
 
 			#admin_sidebar > ul > li > a {
 				position: relative;
 				display: block;
-				padding: 15px 40px 15px 15px;
+				padding: 15px 40px 15px 40px;
 				text-decoration: none;
 			}
 
@@ -304,6 +303,7 @@ body {
 						border-bottom: 2px solid #e3eaef;
 						margin-left: -25px;
 						margin-bottom: 10px;
+						font-size: 13px;
 					}
 					
 					#admin_sidebar > ul > li.opened > ul {
@@ -322,7 +322,7 @@ body {
 
 							#admin_sidebar > ul > li > ul li a {
 								display: block;
-								padding: 10px 15px 10px 40px;
+								padding: 7px 15px 7px 40px;
 								text-decoration: none;
 							}
 
@@ -378,6 +378,12 @@ body {
 	}
 }
 
+@media (max-width:800px){
+	#admin_userbar {
+		padding: 0px 20px;
+	}
+}
+
 #admin_userbar:after {
 	display: block;
 	width: 100%;
@@ -393,9 +399,24 @@ body {
 		float: left;
 	}
 
+	@media (max-width:800px){
+		#admin_userbar .avatar {
+			margin: 5px 0 0 0;
+			width: 40px;
+			height: 40px;
+		}
+	}
+
 		#admin_userbar .avatar img {
 			width: 50px;
 			height: 50px;
+		}
+
+		@media (max-width:800px){
+			#admin_userbar .avatar img {
+				width: 40px;
+				height: 40px;
+			}
 		}
 
 	#admin_userbar .inside {
@@ -473,6 +494,18 @@ body {
 			top: 50px;
 		}
 	}
+	
+	@media (max-width:600px){
+		#admin_userbar .user_menu {
+			top: 50px;
+			left:0;
+			right:0;
+			width: 100%;
+			border-radius:0;
+			border-radius:none;
+			border-bottom:4px solid #0091ff;
+		}
+	}
 
 	#admin_userbar .user_menu.open {
 		display: block;
@@ -485,6 +518,13 @@ body {
 				padding: 6px;
 				text-decoration: none;
 				color: #6F6F6F;
+			}
+			
+			@media (max-width:600px){
+				#admin_userbar .user_menu > li > a {
+					font-size: 14px;
+					padding: 10px;
+				}
 			}
 
 			#admin_userbar .user_menu > li > a:hover {
