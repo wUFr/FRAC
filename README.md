@@ -1,6 +1,11 @@
+**Project frozen - currently working on https://github.com/wUFr/flexi-admin**
+
+
 # FRAC
 Free Responsive Admin Center
 **version 0.4 released**
+
+
 
 
 
