@@ -10,7 +10,7 @@ Free Responsive Admin Center
 
 
 **Online demo:**
-http://wufr.net/frac/
+https://wufr.net/frac/
 
 
 **Licence:**
