@@ -444,7 +444,7 @@ UI FORM
 		}
 
 		.ui_form .item .input_text {
-			width: 100%;
+			max-width: 100%;
 			height: 30px;
 			border: 1px solid #E5E5E5;
 			box-shadow: inset 1px 1px 3px rgba(0,0,0,0.05);
