@@ -25,9 +25,9 @@
             	.addClass(conf.inputParentClassOnError)
                 .removeClass(conf.inputParentClassOnSuccess);
 
-            if(conf.borderColorOnError !== '') {
+            /*if(conf.borderColorOnError !== '') {
                 $elem.css('border-color', conf.borderColorOnError);
-            }
+            }*/
         },
         _removeErrorStyle = function($elem, conf) {
             $elem.each(function() {
