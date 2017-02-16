@@ -1,5 +1,4 @@
-**Project not in active development anymore**. If you're looking for bit better adminpanel, check this one out: https://github.com/wUFr/flexi-admin
-
+**Project not being developed anymore**
 
 # FRAC
 Free Responsive Admin Center   
@@ -9,7 +8,7 @@ FRAC is simple and responsive admincenter ideal for small projects where you don
 
 
 **Online demo:**  
-http://frac.demo.wufr.net/
+https://frac.demo.wufr.cz
 
 
 **Licence:**  
